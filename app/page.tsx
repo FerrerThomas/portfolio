@@ -43,18 +43,22 @@ export default function Portfolio() {
               Me dedico a diseñar y crear Webs y App para clientes
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
-                <span className="relative z-10 flex items-center">
-                  Ver Proyectos <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              </Button>
-              <Button
-                variant="outline"
-                className="border-zinc-700 text-pink-500 hover:text-pink-700 hover:border-zinc-500 bg-transparent"
-              >
-                Contactame
-              </Button>
+              <Link href="#projects">
+                <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
+                  <span className="relative z-10 flex items-center">
+                    Ver Proyectos <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </Button>
+              </Link>
+              <Link href="#contact">
+                <Button
+                  variant="outline"
+                  className="border-zinc-700 text-pink-500 hover:text-pink-700 hover:border-zinc-500 bg-transparent"
+                >
+                  Contactame
+                </Button>
+              </Link>
             </div>
             <div className="flex gap-4 pt-4">
               <Link href="https://github.com/ferrerthomas" target="_blank" rel="noopener noreferrer">
@@ -77,7 +81,7 @@ export default function Portfolio() {
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
-              <Link href="mailto:tomas.ferrer@gmail.com">
+              <Link href="mailto:tomasferrer_web@hotmail.com">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -87,7 +91,7 @@ export default function Portfolio() {
                   <span className="sr-only">Email</span>
                 </Button>
               </Link>
-              <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/2355506234" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -133,6 +137,7 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
             <div className="relative">
+              {/*<div className="relative max-w-md mx-auto">*/}
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
                 <img
@@ -147,6 +152,7 @@ export default function Portfolio() {
                     <span className="text-sm font-medium">Disponible</span>
                   </div>
                 </div>
+              {/*</div>*/}
               </div>
             </div>
 
@@ -166,26 +172,23 @@ export default function Portfolio() {
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Name</div>
+                    <div className="text-sm text-zinc-500">Nombre</div>
                     <div className="font-medium">Tomas Ferrer</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">tomas.ferrer@gmail.com</div>
+                    <div className="font-medium">tomasferrer_web@hotmail.com</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Location</div>
-                    <div className="font-medium">Argentina</div>
+                    <div className="text-sm text-zinc-500">Ubicacion</div>
+                    <div className="font-medium">La Plata, Argentina</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Availability</div>
-                    <div className="font-medium text-green-500">Open to opportunities</div>
+                    <div className="text-sm text-zinc-500">Estado</div>
+                    <div className="font-medium text-green-500">Disponible</div>
                   </div>
                 </div>
 
-                <div className="mt-8">
-                  <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">Download Resume</Button>
-                </div>
               </GlassmorphicCard>
             </div>
           </div>
@@ -212,40 +215,40 @@ export default function Portfolio() {
               repoUrl="https://github.com/FerrerThomas/turnosBarberia"
             />
             <ProjectCard
-              title="Task Management App"
-              description="A collaborative task management application with real-time updates."
-              tags={["React", "Firebase", "Tailwind CSS", "Redux"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
+              title="Portfolio"
+              description="Web que estas viendo actualmente, diseñada para mostrar trabajos y conexion con api de mails"
+              tags={["Next.js", "Node.js", "Tailwind CSS", "TypeScript"]}
+              image="/Porfolio.png?height=400&width=600"
+              demoUrl="https://portfolio-ft-tomas.vercel.app/"
+              repoUrl="https://github.com/FerrerThomas/portfolio"
+            />
+            <ProjectCard
+              title="Tienda Suplmentos Deportivos"
+              description="Web para la venta de suplementeos, con base de datos para los productos y ventas"
+              tags={["Next.js", "Pagos Online", "Node.js", "MongoDB"]}
+              image="/supleShop.png?height=400&width=600"
+              demoUrl="https://suple-shop.vercel.app/"
+              repoUrl="https://github.com/FerrerThomas/supleShop"
+            />
+            <ProjectCard
+              title="Gestion Deposito"
+              description="Web con un plano iterativo, notificaciones para tareas y mas..."
+              tags={["TypeScript", "Next.js", "MongoDB"]}
+              image="/gestionDepo.png?height=400&width=600"
+              demoUrl="https://gestion-deposito.vercel.app/"
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title="AI Content Generator"
-              description="An AI-powered content generation tool using OpenAI's GPT models."
-              tags={["Next.js", "OpenAI API", "Node.js", "MongoDB"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
-            />
-            <ProjectCard
-              title="Fitness Tracker"
-              description="A mobile-first fitness tracking application with data visualization."
-              tags={["React Native", "TypeScript", "D3.js", "Firebase"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
-            />
-            <ProjectCard
-              title="Weather Dashboard"
-              description="A beautiful weather dashboard with forecasts and historical data."
+              title=""
+              description=""
               tags={["React", "Weather API", "Chart.js", "Styled Components"]}
               image="/placeholder.svg?height=400&width=600"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title="Portfolio Website"
-              description="This portfolio website built with Next.js and Tailwind CSS."
+              title=""
+              description=""
               tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
               image="/placeholder.svg?height=400&width=600"
               demoUrl="https://example.com"
@@ -291,7 +294,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">tomas.ferrer@gmail.com</div>
+                    <div className="font-medium">tomasferrer_web@hotmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -318,7 +321,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">WhatsApp</div>
-                    <div className="font-medium">+54 9 11 1234-5678</div>
+                    <div className="font-medium">+54 9 2355 506234</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -378,7 +381,7 @@ export default function Portfolio() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:tomas.ferrer@gmail.com">
+            <Link href="mailto:tomasferrer_web@hotmail.com">
               <Button
                 variant="ghost"
                 size="icon"
@@ -388,7 +391,7 @@ export default function Portfolio() {
                 <span className="sr-only">Email</span>
               </Button>
             </Link>
-            <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/2355506234" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
