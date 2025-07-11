@@ -141,7 +141,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
                 <img
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/yo.png?height=600&width=600"
                   alt="Tomas Ferrer"
                   className="w-full h-full object-cover"
                 />
@@ -159,15 +159,14 @@ export default function Portfolio() {
             <div className="space-y-6">
               <GlassmorphicCard>
                 <p className="text-lg text-zinc-300">
-                  Aca no se que mierda poner realmente
+                  Soy Tomas Ferrer
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  Asique voy a clavar info sobre mi postre
+                  Soy del interior de la provincia y actualmente estudiante de informatica en la UNLP
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                   El cheesecake es un postre muy popular de la cocina americana donde se realiza con un queso untable
-                   suave originario de ese país. En esta receta utilizamos queso crema aromatizado 
-                   con Esencia artificial de Vainilla Alicante para darle untuosidad y aromatizar la crema del relleno
+                  Me dedico a crear webs generalmente para emprendimientos o empresas, la cual cumpla con un objetivo
+                  Este objetivo puede ser tener una tienda online, como tambien solo una web informativa de tu emprendimiento
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
