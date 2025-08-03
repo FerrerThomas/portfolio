@@ -109,9 +109,9 @@ export function FloatingNav() {
                 {item.name}
               </Link>
             ))}
-            <Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0">
+            {/*<Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0">
               Resume
-            </Button>
+            </Button>*/}
           </div>
         </motion.div>
       )}

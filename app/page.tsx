@@ -281,7 +281,7 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="Ponte ne contacto" subtitle="Trabajemos juntos" />
+          <SectionHeading title="Ponte en contacto" subtitle="Trabajemos juntos" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
             <GlassmorphicCard>
