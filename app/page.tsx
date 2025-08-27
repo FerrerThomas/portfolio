@@ -238,11 +238,11 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title=""
-              description=""
-              tags={["React", "Weather API", "Chart.js", "Styled Components"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
+              title="The Basement Shop"
+              description="Web para facilitar la consultar de stock de una tienda de ropa"
+              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
+              image="/TheBasement.png?height=400&width=600"
+              demoUrl="https://the-basement-shop.vercel.app/"
               repoUrl="https://github.com"
             />
             <ProjectCard
