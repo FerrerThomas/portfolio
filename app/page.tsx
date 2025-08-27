@@ -230,11 +230,11 @@ export default function Portfolio() {
               repoUrl="https://github.com/FerrerThomas/supleShop"
             />
             <ProjectCard
-              title="Gestion Deposito"
-              description="Web con un plano iterativo, notificaciones para tareas y mas..."
-              tags={["TypeScript", "Next.js", "MongoDB"]}
-              image="/gestionDepo.png?height=400&width=600"
-              demoUrl="https://gestion-deposito.vercel.app/"
+              title="Sillones Vexo Desing "
+              description="Web para mostrar los trabajos de una empresa de sillones"
+              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
+              image="/Sillones.png?height=400&width=600"
+              demoUrl="https://landing-sillones-vexo.vercel.app/"
               repoUrl="https://github.com"
             />
             <ProjectCard
@@ -252,6 +252,22 @@ export default function Portfolio() {
               image="/Agranel.png?height=400&width=600"
               demoUrl="https://agranel-alimentos.vercel.app"
               repoUrl="https://github.com/FerrerThomas/agranelAlimentos"
+            />
+            <ProjectCard
+              title="Gestion Deposito"
+              description="Web con un plano iterativo, notificaciones para tareas y mas..."
+              tags={["TypeScript", "Next.js", "MongoDB"]}
+              image="/gestionDepo.png?height=400&width=600"
+              demoUrl="https://gestion-deposito.vercel.app/"
+              repoUrl="https://github.com"
+            />
+            <ProjectCard
+              title=""
+              description=""
+              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
+              image="/TheBasement.png?height=400&width=600"
+              demoUrl="https://the-basement-shop.vercel.app/"
+              repoUrl="https://github.com"
             />
           </div>
         </div>
