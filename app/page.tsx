@@ -246,12 +246,12 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title=""
-              description=""
-              tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              title="Lista Productos - Generar Pedido"
+              description="Web de un dietetica para generar un pedido por whatsapp, agregando al carrito por cantidad"
+              tags={["Pedidos", "Carrito de Compras", "Productos", "TypeScript"]}
+              image="/Agranel.png?height=400&width=600"
+              demoUrl="https://agranel-alimentos.vercel.app"
+              repoUrl="https://github.com/FerrerThomas/agranelAlimentos"
             />
           </div>
         </div>
