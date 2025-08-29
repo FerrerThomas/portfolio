@@ -71,7 +71,7 @@ export default function Portfolio() {
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/tomasferrer/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/tomas-ferrer-910133353/" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -220,6 +220,14 @@ export default function Portfolio() {
               image="/Porfolio.png?height=400&width=600"
               demoUrl="https://portfolio-ft-tomas.vercel.app/"
               repoUrl="https://github.com/FerrerThomas/portfolio"
+            />
+            <ProjectCard
+              title="Ferreteria LandingPage"
+              description="Web para mostrar info sobre uan ferreteria con posibles productos a consultar, contacto y comentarios de clientes"
+              tags={["React","Valoracionesz", "Whatsapp API", "Productos"]}
+              image="/Ferreteria.png?height=400&width=600"
+              demoUrl="https://ferreteria-landing.vercel.app/"
+              repoUrl="https://github.com"
             />
             <ProjectCard
               title="Tienda Suplmentos Deportivos"
