@@ -234,7 +234,7 @@ export default function Portfolio() {
               description="Web para mostrar los trabajos de una empresa de sillones"
               tags={["React", "Whatsapp API", "Categorias", "Talles"]}
               image="/Sillones.png?height=400&width=600"
-              demoUrl="https://landing-sillones-vexo.vercel.app/"
+              demoUrl="https://landing-sillones.vercel.app/"
               repoUrl="https://github.com"
             />
             <ProjectCard
