@@ -262,11 +262,11 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title=""
-              description=""
-              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
-              image="/TheBasement.png?height=400&width=600"
-              demoUrl="https://the-basement-shop.vercel.app/"
+              title="Tea Coleccion - Emprendimientos de Te"
+              description="Web par amostra rla historia del emprendimiento, contacto, direccion y sus productos para consultar en whatsapp"
+              tags={["React", "Whatsapp API", "Productos"]}
+              image="/TiendaTea.png?height=400&width=600"
+              demoUrl="https://tea-collection-la-plata.vercel.app/"
               repoUrl="https://github.com"
             />
           </div>
