@@ -230,11 +230,11 @@ export default function Portfolio() {
               repoUrl="https://github.com"
             />
             <ProjectCard
-              title="Tienda Suplmentos Deportivos"
-              description="Web para la venta de suplementeos, con base de datos para los productos y ventas"
-              tags={["Next.js", "Pagos Online", "Node.js", "MongoDB"]}
-              image="/supleShop.png?height=400&width=600"
-              demoUrl="https://suple-shop.vercel.app/"
+              title="ERP para tiendas y negocios"
+              description="Web para gestionar productos, categorias, clientes, proveedores y ventas de mini tiendas o mercados"
+              tags={["Next.js", "Node.js", "MongoDB"]}
+              image="/erp-dashboard.png?height=400&width=600"
+              demoUrl="https://erp-dashboard-ft.vercel.app/"
               repoUrl="https://github.com/FerrerThomas/supleShop"
             />
             <ProjectCard
