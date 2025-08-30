@@ -40,7 +40,7 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
-              Me dedico a diseñar y crear Webs y App para clientes
+              Me dedico a diseñar y crear Webs/App para clientes
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="#projects">
@@ -165,8 +165,10 @@ export default function Portfolio() {
                   Soy del interior de la provincia y actualmente estudiante de informatica en la UNLP
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  Me dedico a crear webs generalmente para emprendimientos o empresas, la cual cumpla con un objetivo
-                  Este objetivo puede ser tener una tienda online, como tambien solo una web informativa de tu emprendimiento
+                  Me dedico a crear webs en general, la cual cumpla con un objetivo
+                </p>
+                <p className="text-lg text-zinc-300 mt-4">
+                  Este objetivo puede ser tener un sistema de gestion, como tambien solo una web informativa de tu emprendimiento
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
@@ -223,11 +225,11 @@ export default function Portfolio() {
             />
             <ProjectCard
               title="Ferreteria LandingPage"
-              description="Web para mostrar info sobre uan ferreteria con posibles productos a consultar, contacto y comentarios de clientes"
-              tags={["React","Valoracionesz", "Whatsapp API", "Productos"]}
+              description="Web para mostrar info sobre una ferreteria con posibles productos a consultar, contacto y comentarios de clientes"
+              tags={["React","Valoraciones", "Whatsapp API", "Productos"]}
               image="/Ferreteria.png?height=400&width=600"
               demoUrl="https://ferreteria-landing.vercel.app/"
-              repoUrl="https://github.com"
+              repoUrl="https://github.com/FerrerThomas/FerrereteriaLanding"
             />
             <ProjectCard
               title="ERP para tiendas y negocios"
@@ -235,7 +237,7 @@ export default function Portfolio() {
               tags={["Next.js", "Node.js", "MongoDB"]}
               image="/erp-dashboard.png?height=400&width=600"
               demoUrl="https://erp-dashboard-ft.vercel.app/"
-              repoUrl="https://github.com/FerrerThomas/supleShop"
+              repoUrl="https://github.com/FerrerThomas/ERP-Dashboard"
             />
             <ProjectCard
               title="Sillones Vexo Desing "
@@ -243,7 +245,7 @@ export default function Portfolio() {
               tags={["React", "Whatsapp API", "Categorias", "Talles"]}
               image="/Sillones.png?height=400&width=600"
               demoUrl="https://landing-sillones.vercel.app/"
-              repoUrl="https://github.com"
+              repoUrl="https://github.com/Vexo-group/LandingSillones"
             />
             <ProjectCard
               title="The Basement Shop"
@@ -251,7 +253,7 @@ export default function Portfolio() {
               tags={["React", "Whatsapp API", "Categorias", "Talles"]}
               image="/TheBasement.png?height=400&width=600"
               demoUrl="https://the-basement-shop.vercel.app/"
-              repoUrl="https://github.com"
+              repoUrl="https://github.com/FerrerThomas/TheBasement"
             />
             <ProjectCard
               title="Lista Productos - Generar Pedido"
@@ -267,15 +269,15 @@ export default function Portfolio() {
               tags={["TypeScript", "Next.js", "MongoDB"]}
               image="/gestionDepo.png?height=400&width=600"
               demoUrl="https://gestion-deposito.vercel.app/"
-              repoUrl="https://github.com"
+              repoUrl="https://github.com/FerrerThomas/gestionDeposito"
             />
             <ProjectCard
               title="Tea Coleccion - Emprendimientos de Te"
-              description="Web par amostra rla historia del emprendimiento, contacto, direccion y sus productos para consultar en whatsapp"
+              description="Web para mostrar la historia del emprendimiento, contacto, direccion y sus productos para consultar en whatsapp"
               tags={["React", "Whatsapp API", "Productos"]}
               image="/TiendaTea.png?height=400&width=600"
               demoUrl="https://tea-collection-la-plata.vercel.app/"
-              repoUrl="https://github.com"
+              repoUrl="https://github.com/FerrerThomas/teaCollection"
             />
           </div>
         </div>
