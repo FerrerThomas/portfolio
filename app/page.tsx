@@ -165,10 +165,10 @@ export default function Portfolio() {
                   Soy del interior de la provincia y actualmente estudiante de informatica en la UNLP
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  Me dedico a crear webs en general, la cual cumpla con un objetivo
+                  Me dedico a crear webs/apps que cumplan con los objetivos del cliente a travez de vibe coding y tecnologias actuales
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  Este objetivo puede ser tener un sistema de gestion, como tambien solo una web informativa de tu emprendimiento
+                  Este objetivo puede ser desde tener un sistema de gestion, como tambien solo una web informativa de tu emprendimiento
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
