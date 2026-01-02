@@ -10,6 +10,7 @@ import { FloatingNav } from "@/components/floating-nav"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { SectionHeading } from "@/components/section-heading"
 import { GlassmorphicCard } from "@/components/glassmorphic-card"
+import { projects } from "@/lib/projects"
 
 export default function Portfolio() {
   return (
@@ -152,7 +153,7 @@ export default function Portfolio() {
                     <span className="text-sm font-medium">Disponible</span>
                   </div>
                 </div>
-              {/*</div>*/}
+                {/*</div>*/}
               </div>
             </div>
 
@@ -205,70 +206,28 @@ export default function Portfolio() {
           <SectionHeading title="Mis Proyectos" subtitle="Algunos trabajos recientes" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-            <ProjectCard
-              title="Barber Web"
-              description="Web para gestionar turnos de una barberia/peluqueria"
-              tags={["Next.js", "TypeScript", "MongoDB"]}
-              image="/Barberia.png?height=400&width=600"
-              demoUrl="https://turnos-barberia-neon.vercel.app/"
-              repoUrl="https://github.com/FerrerThomas/turnosBarberia"
-            />
-            <ProjectCard
-              title="Portfolio"
-              description="Web que estas viendo actualmente, diseñada para mostrar trabajos y conexion con api de mails"
-              tags={["Next.js", "Node.js", "Tailwind CSS", "TypeScript"]}
-              image="/Porfolio.png?height=400&width=600"
-              demoUrl="https://portfolio-ft-tomas.vercel.app/"
-              repoUrl="https://github.com/FerrerThomas/portfolio"
-            />
-            <ProjectCard
-              title="Tienda Suplmentos Deportivos"
-              description="Web para la venta de suplementeos, con base de datos para los productos y ventas"
-              tags={["Next.js", "Pagos Online", "Node.js", "MongoDB"]}
-              image="/supleShop.png?height=400&width=600"
-              demoUrl="https://suple-shop.vercel.app/"
-              repoUrl="https://github.com/FerrerThomas/supleShop"
-            />
-            <ProjectCard
-              title="Sillones Vexo Desing "
-              description="Web para mostrar los trabajos de una empresa de sillones"
-              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
-              image="/Sillones.png?height=400&width=600"
-              demoUrl="https://landing-sillones-vexo.vercel.app/"
-              repoUrl="https://github.com"
-            />
-            <ProjectCard
-              title="The Basement Shop"
-              description="Web para facilitar la consultar de stock de una tienda de ropa"
-              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
-              image="/TheBasement.png?height=400&width=600"
-              demoUrl="https://the-basement-shop.vercel.app/"
-              repoUrl="https://github.com"
-            />
-            <ProjectCard
-              title="Lista Productos - Generar Pedido"
-              description="Web de un dietetica para generar un pedido por whatsapp, agregando al carrito por cantidad"
-              tags={["Pedidos", "Carrito de Compras", "Productos", "TypeScript"]}
-              image="/Agranel.png?height=400&width=600"
-              demoUrl="https://agranel-alimentos.vercel.app"
-              repoUrl="https://github.com/FerrerThomas/agranelAlimentos"
-            />
-            <ProjectCard
-              title="Gestion Deposito"
-              description="Web con un plano iterativo, notificaciones para tareas y mas..."
-              tags={["TypeScript", "Next.js", "MongoDB"]}
-              image="/gestionDepo.png?height=400&width=600"
-              demoUrl="https://gestion-deposito.vercel.app/"
-              repoUrl="https://github.com"
-            />
-            <ProjectCard
-              title=""
-              description=""
-              tags={["React", "Whatsapp API", "Categorias", "Talles"]}
-              image="/TheBasement.png?height=400&width=600"
-              demoUrl="https://the-basement-shop.vercel.app/"
-              repoUrl="https://github.com"
-            />
+            {projects.slice(0, 3).map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                tags={project.tags}
+                image={project.image}
+                demoUrl={project.demoUrl}
+                repoUrl={project.repoUrl}
+              />
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <Link href="/proyectos">
+              <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
+                <span className="relative z-10 flex items-center">
+                  Ver Todos <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
