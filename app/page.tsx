@@ -41,7 +41,7 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
-              Me dedico a diseñar y crear Webs y App para clientes
+              Me dedico a diseñar y crear Webs/App para clientes
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="#projects">
@@ -72,7 +72,7 @@ export default function Portfolio() {
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/tomasferrer/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/tomas-ferrer-910133353/" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -166,8 +166,10 @@ export default function Portfolio() {
                   Soy del interior de la provincia y actualmente estudiante de informatica en la UNLP
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  Me dedico a crear webs generalmente para emprendimientos o empresas, la cual cumpla con un objetivo
-                  Este objetivo puede ser tener una tienda online, como tambien solo una web informativa de tu emprendimiento
+                  Me dedico a crear webs/apps que cumplan con los objetivos del cliente a travez de vibe coding y tecnologias actuales
+                </p>
+                <p className="text-lg text-zinc-300 mt-4">
+                  Este objetivo puede ser desde tener un sistema de gestion, como tambien solo una web informativa de tu emprendimiento
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
